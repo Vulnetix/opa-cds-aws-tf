@@ -1,0 +1,16 @@
+version: 1
+runner: vulnetix-local
+triggers: push
+publish: true
+sast: none
+sca: none
+iac: "off"
+containers: "off"
+sbom: false
+license: true
+tea:
+  off: true
+extras:
+  - action: gha-workflows
+    with:
+      offline: "true"
